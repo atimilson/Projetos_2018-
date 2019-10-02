@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 31/10/2017, 17:53:53
+    Author     : 05506932111
+*/
+$lista: green, yellow, blue;
+$cont: 1;
+
+@each $cor in $lista{
+    div.item-#{$cont}{
+        background: $cor;
+    }
+    $cont: $cont + 1;
+}
+
+
+
+
+@each $thema in manha, tarde, noite{
+  @if $thema == manha{
+    $background: white !global;
+
+  }
+  @else if $thema == tarde{
+    $background: blue !global;
+  }
+  @else if $thema == noite{
+    $background: black !global;
+  }
+
+  .bg-#{$thema}{
+    background: $background;
+  }
+}

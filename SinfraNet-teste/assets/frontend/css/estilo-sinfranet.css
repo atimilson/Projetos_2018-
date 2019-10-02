@@ -1,0 +1,370 @@
+/*
+body,html{height: 100%;}
+
+#posissao-rodape{height: 100%;}
+*/
+@font-face{
+    font-family: nexabold;
+    src: url('../fontes/Nexa-Bold.otf');
+}
+@font-face{
+    font-family: nexablack;
+    src: url('../fontes/NexaBlack.otf');
+}
+@font-face{
+    font-family: nexabook;
+    src: url('../fontes/Nexa-Book.otf');
+}
+@font-face{
+    font-family: OpenSans;
+    src: url('../fontes/OpenSans-Bold.ttf');
+}
+@font-face{
+    font-family: Cabin;
+    src: url('../fontes/Cabin-Bold.ttf');
+}
+
+.evento:hover{
+    background: #ccc;
+}
+
+.espaco a{
+    text-decoration: none;
+}
+
+/*MENU*/
+.menu{
+    background: linear-gradient(to right,#000444 0,#1d357f 40%,#1d357f 60%,#000444 100%);height: 130px;
+}
+/*.menu{ background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%); height: 130px; }*/
+
+
+.header-inner{max-width: 960px;margin: 0 auto;min-height: 130px;}
+.logo{height: 99.52px;float: left;width: 36%;min-height: 120px; min-width: 200px;float: left;margin-top: 9px;}
+.logo a img{min-width: 180px;width: 100%;height: 83%}
+/*.algo-a-mais{width: 518.39px; height: 129.38px; background: rgba(0,0,0,0.3);float: right;}*/
+
+.sub-menu{background: #d0d7df;border-bottom: 10px solid #0071bb;height: 54px;}
+.sub-menu-meio{margin: 0 auto;width: 100%;max-width: 1141px;padding-top: 3px;font-family: 'Calibri',Arial,Helvetica,sans-serif;font-size: 16px;font-weight: bold;letter-spacing: 2px;}
+
+/*estilo menu trancition*/
+#trans-nav { list-style-type: none; height: 40px; padding: 0; margin: 0; z-index: 500}
+#trans-nav li { float: left; position: relative; padding: 0; line-height: 40px; background: #d0d7df url(nav-bg.png) repeat-x 0 0; z-index: 501}
+#trans-nav li:hover { background-position: 0 -40px; }
+#trans-nav li a { display: block; padding: 0 15px; color: #13246a;; text-decoration: none; }
+#trans-nav li a:hover { color: #fff; background: #1c337d; }
+
+#trans-nav .admin a:hover {
+    background: #F5F5F5; 
+    border-radius: 25px 25px;
+}
+
+#trans-nav li ul { opacity: 0; position: absolute; left: 0; width: 8em; background: linear-gradient(to right,#000444 0,#1d357f 40%,#1d357f 60%,#000444 100%); list-style-type: none; padding: 0; margin: 0; }
+#trans-nav li:hover ul { opacity: 1; }
+#trans-nav li ul li { float: none; position: static; height: 0; line-height: 0; background: none; }
+#trans-nav li:hover ul li { height: 30px; line-height: 30px; }
+#trans-nav li ul li a { background: #ccc;}
+#trans-nav li ul li a:hover { background: linear-gradient(to right,#000444 0,#1d357f 40%,#1d357f 60%,#000444 100%); }
+#trans-nav li { -webkit-transition: all 0.2s; }
+#trans-nav li a { -webkit-transition: all 0.5s; }
+#trans-nav li .sub-menu-institucional { -webkit-transition: all 1s; width: 255px;}
+#trans-nav li ul { -webkit-transition: all 1s;}
+#trans-nav li ul li { -webkit-transition: height 0.5s; }
+/*FIM MENU*/
+
+
+.margin-container{margin-top: 10px;}
+
+/*NOTICIAS CARROSEUL*/
+.carousel-indicators li{width: 13px;height: 11px;}
+.carousel-inner{width: 98%;}
+/*classe responsavel por estilizar os botões de 'passar os carroseuls'*/
+.estilizar-buttons{justify-content: flex-end;}
+
+/*esta classe é responsavel pela imagem de fundo do carroseul de noticia*/
+.back-carroseul-noticia{height: 400px; background-size: 808.5px 400px;}
+
+/*esta clase é responsavel pelo estilo do titulo da noticia no carroseul*/
+.titulocarroseul{position: relative;z-index: 100;width: 337px;background: rgba(0,0,0,0.6);}
+
+/*esta classe é responsavel pela tag 'a' para linkar a noticia do carroseul*/
+.link-noticia{width: 100%;height: 400px;position: relative;}
+
+/*classe responsavel para estilizar o texto do titulo da noticia*/
+.carrosel{font: 24px nexablack;position: absolute;bottom: 60px;color: white;background: rgba(0,0,0,0.5);width: 379px;padding-left:8px;}
+
+/*ICONES ACESSOS*/
+
+/*espaço entre o carroseul e os icones*/
+.sem-padding-left{padding-left: 0; margin-bottom: 3px;}
+/*classe responsavel por estilizar o titulo dos 'ACESSOS'*/
+.titulo-acessos{background-image: url('../imagens/icone-acess.svg');width: 42.41px; height: 39.25px; float: left;}
+/*classe responsavel por estilizar o texto do titulo 'ACESSOS'*/
+.estilo-texto-acesso{font:19.17px nexabold;color: #232c77;margin-top: 6px;margin-left: 45px;}
+
+.tamanho-icones{width: 66px;height: 66px;}
+.margin-cima{margin-top: 7px;}
+
+/*NOTICAS SECUNDARIAS*/
+.card{border: none;}
+
+.card-body{padding-top: 2%;}
+/*classe responsavel pelo espaçamento entre as noticias secundarias e a noticia principal*/
+.espaco{margin-top: 15px;}
+.espaco-linha{height: 100px;}
+.card-quatro-noticia {width: 178px;}
+.espaco-coluna{float: left; width: 30%; }
+.card-text{color: black; font: 16px nexabold;}
+.card-title{color: black; font: 19px nexabold;}
+.espaco-hr{margin-bottom: 7px;}
+.espaco-tres-noticia{margin-top: 23px;}
+.btn-mais-noticias{margin-bottom: -42px;margin-top: 5px;}
+.espaco-interno-section{padding-right: 48px;}
+
+.conteudo{margin-left: 48%;height: 100%; padding-top: 3%;}
+.conteudo p{color: black; font: 16px nexabold;}
+
+/*classe responsavel pelo background e tamanho das noticias secundarias*/
+.back-noticia-segundaria{background-image: url('http://d30p9ca83oqyng.cloudfront.net/defesanet/site/upload/news_image/2017/10/38066_resize_300_200_false_true_null.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria2{background-image: url('https://www.produquimica.com.br/wp-content/uploads/2018/06/thumbnail-noticias-site-nutriexperts-263x200.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria3{background-image: url('http://www.abrameq.com.br/upload/site_noticia/2465.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria4{background-image: url('https://www.produquimica.com.br/wp-content/uploads/2018/05/microactive-263x200.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria5{background-image: url('http://www.personalcard.com.br/site/wp-content/uploads/freshizer/4f0776109913548bf9f1dcae2945c2c8_banner_comunicado_1-263-200-c.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria6{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1GQO3WpZ1yBsnH-GZKR-nZ8r0yZM6e70US0pahF8Gcyxwy2u7hA');height: 200px;width: 263px;}
+.back-noticia-segundaria7{background-image: url('http://www.personalcard.com.br/site/wp-content/uploads/freshizer/b80d72b1c90614c0313cf7b235216d90_fotoz3_1028_b-263-200-c.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria8{background-image: url('http://www.eliezermax.com.br/wp-content/uploads/2018/03/dormida-263x200.jpg');height: 200px;width: 263px;}
+.back-noticia-segundaria9{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-MzbofsSGEa1byrPewxlEJ5eMLIODVbjf_3dy47NQ53wfLQr');height: 200px;width: 263px;}
+hr{margin: 0px;margin-bottom: 15px;border: 0;border-top: 1px solid rgba(0,0,0,.1);}
+
+.titulo-noticia-secundaria{font: 16px nexablack;position: absolute;bottom: 0px;color: white;background: rgba(0,0,0,0.5);width: 262px;padding-left: 8px;height: 83px;}
+
+/*classes responsavel pelo estilo do link "MAIS NOTICIAS"*/
+.estilomais{margin-bottom: 0px;margin-top: 7px;}
+.estilomais a img{float: left;}
+.estilomais a p{float: left;margin-left: 4px;margin-top:-2px;font: 16px nexablack;color: #232c77;}
+.card-img-top {border-top-left-radius: 0;border-top-right-radius: 0;}
+/**/
+
+/*classe responsavel pela div de eventos*/
+.margis-laterais{padding-left: -1px; padding-right: 8px;}
+
+/*classe responsavel pelo background da div eventos*/
+.back-evento{background-image: url('http://formacion.iepa.es/fotos/f4_FOTO%20Inteligencias%20multiples.jpg');}
+
+/*classe responsavel pela position do titulo da div eventos*/
+.position-titulo-Evento{position: relative;z-index: 100;width: 300px;background: rgba(0,0,0,0.6);}
+
+/*classe responsavel pelo link da div de evento*/
+.link-evento{width: 100%;height: 270px;position: relative;}
+
+/*classe responsavel pelo estilo do titulo do evento*/
+.estilo-titulo-evento{font: 16px nexablack;position: absolute;bottom: 1px;color: white;background: rgba(0,0,0,0.5);width: 265px;padding: 5px;height: 200px;}
+
+/*ULTIMAS NOTICIAS*/
+
+/*estilo dos titulos "ULTIMAS NOTICIAS","MAIS LIDAS" E "ANIVERSARIANTES"*/
+.titulo-ult-noticia{font: 19.17px nexabold;color: #232c77;margin-top: 6px;margin-left: 45px;}
+.tamanho-img{background-image: url('../imagens/ultimas.svg');width: 42.41px; height: 39.25px; float: left;}
+.img-mais-lidas{background-image: url('../imagens/maislidas.svg');width: 42.41px; height: 39.25px; float: left;}
+.img-niver{background-image: url('../imagens/aniversario.svg');width: 42.41px; height: 39.25px; float: left;}
+/**/
+
+/*classe para estilizar o titulo da noticia nas "ultimas noticias"*/
+.estilo-titulo-noticia{font: 16px nexablack;width: max-content;}
+
+/*estilo para tirar a margim da tag "P"*/
+.estilo-titulo-noticia p{margin-bottom: 0px;}
+
+/*classe para estilizar o subTitulo da noticia nas "ultimas noticias"*/
+.estilo-subtitulo-noticia{font: 16px nexabold;width: max-content;}
+
+/*classe para espaçar as ultimas noticias*/
+.espaco-ultnoticias{margin-top: 9px;}
+
+/*classes para tirar o text-decoration e cor do titulo e subtitulo dos ultimas noticias*/
+.espaco-ultnoticias a:hover{text-decoration: none; background: rgba(0,0,0,0.1);}
+.espaco-ultnoticias a .estilo-titulo-noticia{font: 16px nexablack; color: #000;}
+.espaco-ultnoticias a .estilo-subtitulo-noticia{font: 15px nexablack; color: #575756;}
+.espaco-ultnoticias a .estilo-subtitulo-noticia p{margin-bottom: 8px;}
+/**/
+
+/*MAIS LIDAS*/
+/*separador da "MAIS LIDAS" das "ULTIMAS NOTICIAS" e "ANIVERSARIOS"*/
+.espaco-titulos{margin-top: 20px;}
+
+/*ANIVERSARIOS*/
+
+/*coloca o scrol na lista de aniversarios*/
+.scroll-niver{overflow-y: scroll; height: 330px; /*width: max-content;*/}
+
+/*Limita o espaço da lista de aniversario*/
+.aniver{margin-left: 0px;width: min-content;margin-top: 10px;}
+
+/*estilo das bordas da data do aniversariante*/
+.borda-data{border-top: 1px solid #232c77;border-right: 1px solid #232c77;padding-left: 6px;}
+
+/*DUVIDAS E SERVIÇOS*/
+
+/*Classe responsavel por espaçar a section duvidas*/
+.espaco-duvidas{margin-top: 10px;}
+
+/*bloco responsavel pelo estilo dos titulos "DUVIDAS" e "SERVICOS"*/
+#titulos-duv{width: 100%;height: 34px;}
+#titulo-serv{width: 50%;}
+
+.header-duvida{color: #fff;font: 20px nexabold; padding-top: 4px; height: 21px;}
+.link-servico{padding-left: 0px;}
+.header-serviço{color: #232c77;font: 20px nexabold;padding-top: 8px;}
+.titulo-servico{background: #222c78;}
+.back-ul-duvida{background: #232c77;}
+
+/*bloco responsavel pelo linhas de duvidas e serviços*/
+.estilo-linha{margin-top: 6px; margin-left: 0px;margin-right: 0px;}
+.servico{width: 100%;padding-bottom: 1px;color: black;font: nexabold}
+.duvida{width: 400px;margin-left: 14%;padding-bottom: 1px;}
+
+.espaco-servico{padding-right: 0;padding-left: 11px;}
+
+.tamanho-card{width: 263px}
+
+#fundo-duvida:hover{background: rgba(0,0,0,0.3);}
+#fundo-duvida a{text-decoration: none;}
+#fundo-servico:hover{background: rgba(0,0,0,0.3);}
+#fundo-servico a{text-decoration: none;}
+.pedido{font: 18px nexabold;color: #232c77;text-decoration: none;padding-top: 13px;padding-left: 5px;}
+.estilo-mais-duvidas{padding-left: 235PX;}
+.estilo-duvida{padding-left: 227PX;}
+.estilo-mais-servico{padding-right: 0; padding-left: 271px;}
+.estilo-mais-evento{padding-left: 39%;}
+.link-mais-duvidas{margin-top: 9px;}
+.img-mais-duvidas{float: left;margin-right: 3px;}
+.links-frequentes{font: 16px nexablack;color: #232c77;}
+
+/*VIDEOS E AUDIOS*/
+.estilo-titulo-videos{font: 24px nexabook;margin-top: 16px;margin-bottom: -7px;color: #232c77;}
+.lateral-direito{padding-right: 0;}
+.videostilo{height: 135px;border: 1px solid white;}
+.lateral-esquerdo{padding-left: 0;}
+.margin-auto-audio{margin-top: 12px;}
+.audiostilo{height: 65px;}
+.titulo-audio{margin-bottom: 0px;font: 16px nexabold;color: #232c77;}
+#audio{margin-bottom: 0px;}
+.tamanho-audio{width:100%;}
+
+/*+ VIDEOS E AUDIOS*/
+.estilo-mais-videos{margin-bottom: 0px;margin-top: 22px;width: 173px;}
+.link-mais-videos{margin-top: 9px;}
+.img-mais-videos{float: left;margin-right: 3px;}
+.estilo-texto-videos{font: 16px nexablack;color: #232c77;}
+
+/*FOTOS*/
+.estilo-titulo-fotos{font: 24px nexabook;margin-top: -12px;margin-bottom: -7px; color: #232c77;}
+espaco-album{margin-top: 10px;}
+.estilo-mais-fotos{margin-bottom: 0px;margin-top: 22px;width: 82px;}
+.coluna-fotos{padding-right: 0;}
+.ftp1{
+    background-image: url('https://mummuo.files.wordpress.com/2013/03/sol-labareda-solar-terra-fotografia-history-channel.jpg?w=812');
+    height: 195px;
+}
+.ftp2{
+    background-image: url('http://www.tevisa.com.br/wp-content/uploads/2015/10/Fotos_3_cortada-312x195.jpg');
+    height: 195px;
+}
+.ftp3{
+    background-image: url('https://fems.org.br/Fotos/foto_20121213120054.jpg');
+    height: 195px;
+}
+.ftp4{
+    background-image: url('https://i.pinimg.com/originals/f4/15/3f/f4153f486fc341f5144549d70af3b3cb.jpg');
+    height: 195px;
+}
+
+/*estilo dos serviços na home*/
+.titulo-serv{
+    width: 100%;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    /*    background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));*/
+    /*          background-image: linear-gradient(rgb(28, 210, 242), rgb(68, 0, 204));*/
+
+
+    height: 40px;   
+    border-radius: 10px 10px 0 0;
+}
+.alinhamento{
+    width: 100%;
+}
+.titulo-serv .nav-item p{
+    text-align: center;
+}
+
+.estilo-texto-servico{
+    margin-bottom: 0;    
+    color: white;    
+    font: 25px nexablack;
+    padding-top: 4px;
+}
+.fundo-tabela{
+    background: rgba(204,204,204,0.3);
+    border-radius: 0px 0px 10px 10px;
+}
+.acessos:hover{
+    background: rgba(204,204,204,0.7);
+    border-radius: 0px 0px 10px 10px;
+}
+.conteudo-servico{
+    padding-left: 20px;
+    height: 65px;
+}
+#icon-servico{
+    font-size: 30px; 
+    color: orange;
+    padding-top: 5%;
+    float: left;
+}
+.tipo-servico{
+    padding-top: 5%;
+}
+/*fim estilo serviços da home*/
+
+
+/*style lista footer*/
+.list-group-item{
+    list-style-type: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+}
+#footer-link{
+    color: #fff;
+}
+
+
+.espaco-tr{
+    margin-bottom: 30px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+.footer-index{
+    position: absolute;    
+    width: 100%;
+    height: 225px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+body {
+    margin: 0 0 300px;
+    /* bottom = footer height */
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right,#000444 0,#1d357f 40%,#1d357f 60%,#000444 100%)
+}

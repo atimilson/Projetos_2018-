@@ -1,0 +1,26 @@
+.tituloPagina{
+    background-color: #324688; 
+    margin-bottom: 20px;
+}
+.img-missao .foto-missao{
+    max-width: 100%;
+    height: auto;
+}
+.texto-titulo{
+    color: white; 
+    margin-left: 21%;
+    font-size: 32px;
+    font-weight: bold;
+}
+.titulo-missao{
+    font-size: 22px;
+    font-style: italic;
+    color: #002060;
+    margin: 7.5pt;
+}
+.subtitulo-missao{
+    font-size: large;
+    font-style: italic;
+    color: #002060;
+    margin: 7.5pt;
+}

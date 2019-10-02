@@ -1,0 +1,129 @@
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+ vertical-align: baseline;   
+}
+table{
+    border-collapse: separate;
+border-spacing: 0 10px;
+margin: 0 0 0 0;
+}
+.titulos-tabela{
+    background: #082346;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;  
+}
+
+.centro{
+    text-align: left;
+}
+
+.corpo-tabela{
+    text-align: left;
+background: white;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);   
+}
+
+.corpo-tabela:hover{
+    background: #8e8d8d;
+    
+}
+
+.corpo-tabela:hover{
+    color: white;
+}
+
+.corpo-tabela:hover .popover{
+    color: black;
+}
+
+
+.btn-editar{
+    color:  #4B00FF;
+    background: #00FF0A;
+}
+
+.coluna-nome{
+    width: 39%;
+}
+
+.coluna-ramal-dataAniver{
+    width: 20%;
+}
+
+.coluna-perfil{
+    width: 14%;
+}
+
+.coluna-setor{
+    width: 20%;
+}
+
+.salve{
+    margin-top: 0px;
+}
+
+/*ESTILO DOS INPUTS*/
+#filtro {
+    width: 84.7%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 6px; 
+    border: 1px solid #000444; /* Add a grey border */
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-right: 0px;
+}
+
+/*ESTILO DOS INPUTS*/
+#filtro-aniver {
+    width: 83.6%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 6px; 
+    border: 1px solid #000444; /* Add a grey border */
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-right: 0px;
+}
+
+.form-row{
+    margin-left: 0px;
+}
+.select-estilo{
+    height: 50px;
+    margin-top: 10px;    
+    border-radius: 3px;
+    border: 1px solid #000444; /* Add a grey border */
+}
+
+.btn-editar-not{
+    background: #fff;
+    border: 2px solid #f7cb60;
+    width: 50px;
+    border-radius: 7px;
+    color: #f7cb60;
+}
+.btn-editar-not:hover{
+    background: #f7cb60;
+    border: 1px solid #f7cb60;
+    color: white;
+}
+    .btn-excluir-not{
+    background: #FFF;
+    border: 2px solid #E3342F;
+    width: 50px;
+    border-radius: 7px;
+    color: #E3342F;
+}
+.btn-excluir-not:hover{
+    background: #E3342F;
+    border: 1px solid #E3342F;
+    color: white;
+}
+.centro-icon{
+    margin-top: 4px;
+}
+
+.label-modal{
+    font-size: 20px;
+}

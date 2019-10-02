@@ -1,0 +1,57 @@
+@font-face {
+    font-family: nexabold;
+    src: url('../fontes/Nexa-Bold.otf');
+}
+@font-face {
+    font-family: nexabook;
+    src: url('../fontes/Nexa-Book.otf');
+}
+@font-face {
+    font-family: nexablack;
+    src: url('../fontes/NexaBlack.otf');
+}
+
+.centralizar_icone{
+    text-align: center;
+    background: bisque;          
+}
+
+.linhaFundo{
+    
+}
+.espaco-acess{
+    margin: 19px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding-left: 0;
+    padding-right: 0;
+    background: #FFF;
+    border-radius: 5px;
+}
+.espaco-acess a{
+    text-decoration: none;
+    color: black;
+}
+.espaco-acess:hover{
+    text-decoration: none;
+    
+    font-weight: bold;
+    background: #2196F3;
+}
+
+
+.espaco-acess:hover a{
+    color: #FFF;
+}
+
+.corpo-serv{
+    height: 100%;
+}
+.nome-sistema{
+    text-align: center;
+    font:18px nexaboold;
+    padding-top: 5px;
+}
+
+.descr-sistema{
+    text-align: center;
+}

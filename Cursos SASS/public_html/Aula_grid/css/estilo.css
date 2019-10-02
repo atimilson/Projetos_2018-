@@ -1,0 +1,59 @@
+.linha {
+  margin-left: auto;
+  margin-right: auto; }
+
+.col-l12, .col-l11, .col-l10, .col-l9, .col-l8, .col-l7, .col-l6, .col-l5, .col-l4, .col-l3, .col-l2, .col-l1 {
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  float: left; }
+
+.col-l12 {
+  width: 100%;
+  background: #112233; }
+
+.col-l11 {
+  width: 91.6666666667%;
+  background: #224466; }
+
+.col-l10 {
+  width: 83.3333333333%;
+  background: #336699; }
+
+.col-l9 {
+  width: 75%;
+  background: #4488cc; }
+
+.col-l8 {
+  width: 66.6666666667%;
+  background: #55aaff; }
+
+.col-l7 {
+  width: 58.3333333333%;
+  background: #66ccff; }
+
+.col-l6 {
+  width: 50%;
+  background: #77eeff; }
+
+.col-l5 {
+  width: 41.6666666667%;
+  background: #88ffff; }
+
+.col-l4 {
+  width: 33.3333333333%;
+  background: #99ffff; }
+
+.col-l3 {
+  width: 25%;
+  background: #aaffff; }
+
+.col-l2 {
+  width: 16.6666666667%;
+  background: #bbffff; }
+
+.col-l1 {
+  width: 8.3333333333%;
+  background: #ccffff; }
+
+/*# sourceMappingURL=estilo.css.map */

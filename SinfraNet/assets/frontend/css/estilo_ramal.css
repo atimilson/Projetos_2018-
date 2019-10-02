@@ -1,0 +1,57 @@
+
+#filtro {
+    width: 86%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 6px; 
+    border: 1px solid #000444; /* Add a grey border */
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-right: 18px;
+}
+
+.form-control{
+    height: auto;
+}
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable .estilo-tabel{
+    background: #000444;
+    color: white;
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 5px;; /* Add padding */    
+}
+
+#myTable tr {    
+    border-bottom: 1px solid #ddd;     
+}
+
+#myTable tr.header, #myTable tr:hover {   
+    background-color: #d0d7df;
+    color: black;
+}
+.form-row{
+    margin-left: 6px;
+}
+
+.tamanho-setor{
+    width: 24%;
+}
+.tamanho-nome{
+    width: 60%;
+}
+.tamanho-ramal{
+    width: 20%;
+}
+
+.select-estilo{
+    height: 50px;
+    margin-top: 10px;
+}

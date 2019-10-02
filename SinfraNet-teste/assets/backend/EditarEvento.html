@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Editar Eventos</title>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css"/>
+        <script src="ckeditor.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Logo</h3>
+                    <strong>BS</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu">
+                            <img src="home2.svg" style="width: 25px;height: 25px;"/>
+                            Home
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="noticia.svg" style="width: 25px;height: 25px;"/>
+                            Noticia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="eventos.svg" style="width: 25px;height: 25px;"/>
+                            Evento
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                             <img src="repositorio.svg" style="width: 25px;height: 25px;"/>
+                            Repositório
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="acessos&serviços.svg" style="width: 25px;height: 25px;"/>
+                            Acesso e Serviço
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Acessos</a></li>
+                            <li><a href="#">Serviços</a></li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="galeria.svg" style="width: 25px;height: 25px;"/>
+                            Midia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="aniversarios.svg" style="width: 25px;height: 25px;"/>                            
+                            aniversario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="ramais.svg" style="width: 25px;height: 25px;"/>
+                            Ramal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="enquetes.svg" style="width: 25px;height: 25px;"/>
+                            Enquete
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="duvidas.svg" style="width: 25px;height: 25px;"/>
+                            Duvidas Frequentes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                           <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                            <i class="glyphicon glyphicon-align-justify"></i>
+                                        </button>
+                                    </div>
+                                        <div class="col-md-11"  align="right">
+                                  <form class="navbar-form" role="search" >
+                                    <img src="logo.svg" width="800" height="100">
+                                    <div class="input-group add-on">
+                                      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                      <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                            </div>
+                </nav>
+                <!--FIM NAV-BAR-->
+                <div class="container">
+                    <form>
+                        <label class="labelarquivo">Escolher Thumbnail.</label>
+                        <div class="form-group btninput">                               
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <button type="button" class="btn btn-success">Enviar</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Titulo">Evento</label>
+                            <input type="text" class="form-control" placeholder="Nome do Evento"/>                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Titulo">Subtítulo</label>
+                            <input type="text" class="form-control" placeholder="Subtítulo da Evento"/>                            
+                        </div>
+                    </form>
+
+                    <form>
+                        <textarea name="editor1" id="editor1" rows="10" cols="80">
+                            This is my textarea to be replaced with CKEditor.
+                        </textarea>
+                        <script>
+                            CKEDITOR.replace('editor1');
+                        </script>
+                        <button type="button" class="btn btn-primary btn-lg "><img src="salvar.svg" width="25px" height="25px"> Salvar</button>
+                        <button type="button" class="btn btn-secondary btn-lg"><img src="cancelar.svg" width="25px" height="25px">Cancelar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#sidebarCollapse').on('click', function () {
+                                    $('#sidebar').toggleClass('active');
+                                });
+                            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"  crossorigin="anonymous">
+        <style>
+            /* body{
+                 margin: 0 auto;
+             }
+             div{
+                 width: 150px;
+                 height: 600px;
+                 background: #505151;
+                 float: left;
+                 display: block;
+                 position: absolute;
+                 
+             }
+             ul{
+               text-align: center;
+              list-style: none;
+              margin: 9px 0px 0px -40px;
+              
+             }
+             
+             ul li{
+                 padding: 8px;
+                 
+             }
+             
+             li a{
+              color: mintcream;
+               padding: 10px;
+               text-decoration: none;
+             }
+             li:hover{
+                 background: #4fa4d6;
+                 color: white;
+             }
+            */
+            #exampleAccordion{
+                width: 150px;
+                text-align: center;
+                background: #565656;
+                float: left;
+                height: auto;
+                min-height: 100%;
+                position: fixed;
+            }
+            #exampleAccordion1{
+                padding: 0;
+                margin: 0;
+                   
+            }
+            
+            #exampleAccordion1 ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            #exampleAccordion1 ul{
+
+            } 
+
+            #teste{
+                margin: 0;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            div.item{
+                margin: 0;
+                padding: 10px;
+            }
+            div.item:hover #teste{
+                background: #2175a5;
+               
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <ul>
+                <li><a href="#">teste</a></li>
+            </ul>
+        </div>
+
+
+        <div id="exampleAccordion" data-children=".item">
+            <div class="item">
+                <div id="teste" >
+                <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
+                    Toggle item
+                </a>
+                  </div>
+                <div id="exampleAccordion1" class="collapse" role="tabpanel">
+                    <ul>
+                       <li> <a href="#">teste</a></li>
+                        <li><a href="#">teste2</a></li>
+                        <li><a href="#">teste3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
+                    Toggle item 2
+                </a>
+                <div id="exampleAccordion2" class="collapse" role="tabpanel">
+                    <ul>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste2</a></li>
+                        <li><a href="#">teste3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

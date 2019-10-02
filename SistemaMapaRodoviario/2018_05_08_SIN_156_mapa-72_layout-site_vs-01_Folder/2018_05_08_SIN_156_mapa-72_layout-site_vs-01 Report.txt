@@ -1,0 +1,132 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: 2018_05_08_SIN_156_mapa-72_layout-site_vs-01.ai
+Color Mode: CMYK color
+Color Profile: Coated FOGRA39 (ISO 12647-2:2004)
+Ruler Units: centimeters
+Artboard Dimensions: 48,3303 cm x 34,7859 cm
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Nexa Light (OTF)
+Nexa Light Italic (OTF)
+Nexa Bold (OTF)
+Nexa Black (OTF)
+Nexa XBold (OTF)
+Nexa Thin (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\back_site-mapa.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 12949K, 2500 by 1768 pixels
+Dimensions: 1383,35 by 978,305 points 
+Resolution: 130,119 by 130,119 pixels per inch
+
+
+O:\_BUENAS\_2015_BUENAS_Mock-up\2015_BUENAS_MOCK-UP_E-mails\gmail_template_2014.psd
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 14560K, 2560 by 1456 pixels
+Dimensions: 1280 by 728 points 
+Resolution: 144 by 144 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\e-mail\tela do dowload do mapa.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 105468K, 8000 by 4500 pixels
+Dimensions: 1920 by 1080 points 
+Resolution: 300 by 300 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\mapa.psd
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 12333K, 1955 by 1615 pixels
+Dimensions: 412,006 by 340,353 points 
+Resolution: 341,646 by 341,646 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\mapa.psd
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 12333K, 1955 by 1615 pixels
+Dimensions: 449,75 by 371,532 points 
+Resolution: 312,974 by 312,974 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\mapa.psd
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 12333K, 1955 by 1615 pixels
+Dimensions: 361,009 by 298,225 points 
+Resolution: 389,907 by 389,907 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\back_site-mapa.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 12949K, 2500 by 1768 pixels
+Dimensions: 1383,35 by 978,305 points 
+Resolution: 130,119 by 130,119 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\mapa.psd
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 12333K, 1955 by 1615 pixels
+Dimensions: 433,746 by 358,312 points 
+Resolution: 324,522 by 324,522 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\back_site-mapa.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 12949K, 2500 by 1768 pixels
+Dimensions: 1383,35 by 978,305 points 
+Resolution: 130,119 by 130,119 pixels per inch
+
+
+Z:\_2018_SIN\2018_05_07_SIN_156_mapa-72_layout-site\links\back_site-mapa.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 12949K, 2500 by 1768 pixels
+Dimensions: 1383,35 by 978,305 points 
+Resolution: 130,119 by 130,119 pixels per inch

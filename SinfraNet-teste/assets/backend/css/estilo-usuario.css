@@ -1,0 +1,11 @@
+/*ESTILO DOS INPUTS*/
+#filtrouser {
+    width: 84.7%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 6px; 
+    border: 1px solid #000444; /* Add a grey border */
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-right: 0px;
+}

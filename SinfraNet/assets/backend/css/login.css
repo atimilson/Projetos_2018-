@@ -1,0 +1,42 @@
+.b-login {
+  margin: 0;
+  padding: 0;
+  background-color: #050c4d;
+  height: 100vh;
+}
+.btn-md{
+    font-size: 1em;
+    color: #fff;
+    background-color: #050c4d;
+    border-color: #050c4d;
+}
+.btn-md:hover{
+    color: #fff;
+    background-color: #050c4d;
+    border-color: #050c4d;
+}
+.btn-md:focus{
+    color: #fff;
+    background-color: #050c4d;
+    border-color: #050c4d;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  margin-left: 300px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+
+#login-box{border-radius: 25px 2px;}
+
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+/* ---------------------------------------------------
+  FIM DO LOGIN
+----------------------------------------------------- */

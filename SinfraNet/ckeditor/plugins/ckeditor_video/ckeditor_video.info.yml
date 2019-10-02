@@ -1,0 +1,13 @@
+name: CKEditor Video
+description: A CKEditor plugin to insert HTML5 video.
+package: CKEditor
+type: module
+# core: 8.x
+dependencies:
+  - fakeobjects
+
+# Information added by Drupal.org packaging script on 2017-09-17
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'ckeditor_video'
+datestamp: 1505658246

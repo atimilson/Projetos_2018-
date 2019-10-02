@@ -1,0 +1,18 @@
+.titulo_padrao_noticia{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }            
+    .sub-titulo_padrao_noticia{
+        font-size: 1.25rem;
+    }
+    .publicacao_padrao_noticia{
+        line-height: 1.33;
+    }
+    .notificacao_padrao_noticia{
+        margin-bottom: 2px;
+        font-weight: bold;
+        font-size: .75rem;
+        color: #979797;
+        letter-spacing: -.02rem;
+    }

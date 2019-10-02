@@ -1,0 +1,13 @@
+audio{
+    width: 250px;
+}
+
+.titulo-audio{
+    font-weight: bold;
+    color: #232c77;
+    margin-bottom: 0px;
+}
+
+.subtitulo-audio{
+    margin-bottom: 3px;
+}

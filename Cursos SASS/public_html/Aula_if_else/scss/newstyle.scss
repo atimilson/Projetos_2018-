@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/10/2017, 15:57:14
+    Author     : 05506932111
+*/
+
+@mixin colorir ($cor, $propriedade, $tom){
+    @if($tom == 1){
+        #{$propriedade}: lighten($cor, 40%); 
+        
+    }@else if($tom == 2){
+       #{$propriedade}: lighten($cor, 20%);
+       
+    }@else if($tom == 3){
+       #{$propriedade}: lighten($cor, 10%);  
+       
+    }@else if($tom == 4){
+       #{$propriedade}: lighten($cor, 0%);  
+       
+    }@else if($tom == 5){
+       #{$propriedade}: darken($cor, 15%);
+           
+    }@else if($tom == 6){
+       #{$propriedade}: darken($cor, 20%);  
+    }
+    
+}
+
+body{
+    @include colorir(yellow, color, 3);
+    @include colorir(red, background, 2);
+}

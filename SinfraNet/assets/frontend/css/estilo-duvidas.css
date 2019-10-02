@@ -1,0 +1,55 @@
+@font-face {
+    font-family: nexabold;
+    src: url('../fontes/Nexa-Bold.otf');
+}
+@font-face {
+    font-family: nexabook;
+    src: url('../fontes/Nexa-Book.otf');
+}
+@font-face {
+    font-family: nexablack;
+    src: url('../fontes/NexaBlack.otf');
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+/*    font-size: 15px;*/
+    font: 15px nexablack;
+    transition: 0.4s;
+    margin-bottom: 3px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font: 14px nexabold;
+}
+
+.linha-pergunta{
+    margin-top: 10px;
+}

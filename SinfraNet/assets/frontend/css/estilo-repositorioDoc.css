@@ -1,0 +1,23 @@
+.correio:hover{
+    background: peru;
+}
+
+div .categoria{
+    width: 300px;
+    height: 70px;
+    background: #ccc;
+    text-align: center;
+    padding-top: 7%;
+}
+
+#filtro-doc {
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 6px; 
+    border: 1px solid #000444; /* Add a grey border */
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-right: 0px;
+    margin-left: -5px;    
+}
+

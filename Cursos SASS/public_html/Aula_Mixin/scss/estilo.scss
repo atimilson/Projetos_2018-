@@ -1,0 +1,12 @@
+@mixin colorir($cor1:#6c00cc, $cor2:white) {
+  background:$cor1;
+  color: $cor2;
+}
+
+.red{
+  @include colorir(#f00, black);
+}
+
+.blue{
+  @include colorir(white, blue);
+}

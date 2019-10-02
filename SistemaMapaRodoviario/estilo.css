@@ -1,0 +1,132 @@
+@font-face{
+    font-family: Nexa-xbold;
+    src: url(Fonts/Nexa-XBold.otf);
+}
+
+@font-face{
+    font-family: Nexa-black;
+    src: url(Fonts/NexaBlack.otf);
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Nexa Bold;
+    src: url(Fonts/Nexa-Bold.otf);
+  
+}
+
+body{
+    background-image: url("back_site-mapa.jpg");
+}
+
+.st0
+{
+  background : #FBBA00;
+  background : rgba(251, 186, 0, 1);
+  border-radius : 6px;
+  -moz-border-radius : 6px;
+  -webkit-border-radius : 6px;
+  padding: 6px;
+}
+
+
+form, #conteudo{
+    background:rgba(233,226,210,.5);
+    padding: 16px 140px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+label{
+    font-family: Nexa-xbold;
+    color: #133058;
+    font-size: 12px;
+    line-height: 0.428571;
+}
+
+.abaixo{
+    margin-bottom: 15px;
+}
+
+html, body {
+height: 100%;
+}
+
+#page {
+min-height: 100%;
+position: relative;
+}
+
+footer{
+    
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+      background: linear-gradient(to right,#000444 0,#1d357f 40%,#1d357f 60%,#000444 100%);
+    
+    
+}
+#topo{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+#cadastrar{
+    background: #133058;
+    border-radius: 1px 15px 15px 15px;
+    margin-top: 14px;
+    word-wrap: break-word;
+    color: #D49F00;
+}
+
+#icone{
+    background-image: url("imagens/Asset 1.png");
+}
+
+.texto-img-72{
+   font-family: Nexa-black;font-size: 10px;
+   
+   margin-top: 50px;
+}
+
+#img_mapa{
+    position: absolute;
+}
+
+
+
+@media(min-width: 1200px){
+#topo,#formulario{
+    width: 916px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #img_mapa{
+        position: relative;
+        width: 85%;
+    }
+    #texto_mapa{
+        text-align: center;
+        
+    }
+    #centraliza_mapa{
+        text-align: center;
+    }
+    footer{
+        position: relative;
+    }
+}
+
+    
+@media screen and (max-height: 840px) {
+  
+    footer{
+        position: relative;
+    }
+}

@@ -1,0 +1,84 @@
+.titulo-video{
+    font-weight: bold;
+}
+
+.foto-index{
+    position: relative;
+}
+.overlay-index {
+    position: absolute; 
+    bottom: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.foto-index:hover .overlay-index {
+    opacity: 1;
+}
+.titulo-albun-index{
+    position: absolute;
+    bottom: -10px;
+    right: 6px;
+    color: black;
+    background: #ccc;
+    border-radius: 50px;
+    padding: 3px 7px 3px 7px;
+}
+
+
+/*Albuns*/
+.albuns{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.titulo-albun{
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    color: black;
+    background: #ccc;
+    border-radius: 50px;
+    padding: 3px 7px 3px 7px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.albuns:hover .overlay {
+    opacity: 1;
+}
+
+/*estilo das fotos nos albuns*/
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+    display: block;
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

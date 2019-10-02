@@ -1,0 +1,109 @@
+
+create database sinfra_net;
+
+create table noticias(
+id serial primary key,
+titulo varchar(255),
+subtitulo varchar(255),
+conteudo text,
+data_noticia timestamp default now(),
+img varchar(255),
+id_criador_noticia int,
+publicado int,
+data_publicacao timestamp,
+id_publicador_noticia int,
+autor_noticia varchar(255),
+autor_imagens varchar(255),
+posicao_carrousel int default 0,
+posicao_tres int default 0,
+posicao_quadro int default 0;
+	
+
+
+) 
+
+
+	
+create table evento(
+id serial primary key,
+titulo varchar(255),
+subtitulo varchar(255),
+conteudo text,
+data_evento timestamp default now(),
+img varchar(255),
+autor_noticia varchar(255),
+autor_imagens varchar(255),
+id_publicador int
+) 
+
+create table usuario(
+	id serial not null primary key,
+	usuario varchar(50) not null,
+	senha varchar(50) not null,
+	email varchar(255) not null,
+	nome_completo varchar(255),
+	data_criacao timestamp default now()
+								
+)
+
+	
+	create table visualizacoes_noti(
+	id serial primary key,
+	id_noticia int,
+	views_noticia int,			
+	data_ultima_view timestamp,
+	Foreign key (id_noticia) references noticias(id)									
+	)
+
+	CREATE TABLE visualizacoes_eventos
+(
+    id_evento integer NOT NULL,
+    id serial NOT NULL PRIMARY KEY,
+    views_evento integer default 0,
+	data_ultima_view timestamp ,
+	Foreign key (id_evento) references evento(id)
+)	
+
+
+
+CREATE TABLE "ci_sessions" (
+            "id" varchar(40) NOT NULL,
+            "ip_address" varchar(45) NOT NULL,
+            "timestamp" bigint DEFAULT 0 NOT NULL,
+            "data" text DEFAULT '' NOT NULL
+    );
+
+CREATE INDEX "ci_sessions_timestamp" ON "ci_sessions" ("timestamp");
+
+
+CREATE TABLE acessos_home_sinfranet (
+    id serial primary key,
+    data_visualizacao timestamp default now() NOT NULL,
+	ip_address varchar(45) NOT NULL
+);
+
+CREATE OR REPLACE FUNCTION acessos_horarios_sinfranet()
+RETURNS trigger AS $sinfranet_trigger$
+BEGIN
+INSERT INTO acessos_home_sinfranet
+(ip_address)
+VALUES
+(new.ip_address);
+RETURN NEW;
+END;
+$sinfranet_trigger$ LANGUAGE plpgsql;
+
+CREATE TRIGGER log_trigger
+AFTER INSERT ON ci_sessions
+FOR EACH ROW
+EXECUTE PROCEDURE acessos_horarios_sinfranet();
+
+
+
+
+
+
+SELECT *
+		FROM   aniversarios
+		WHERE  Extract(month from data_nasc) >= Extract(month from Now())
+		AND    Extract(month from data_nasc) <= Extract(month from Now() + Interval '20 day') order  by Extract(day from data_nasc) Asc

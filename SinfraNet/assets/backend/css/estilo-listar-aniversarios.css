@@ -1,0 +1,22 @@
+
+table{
+    background: #fff;
+}
+.titulos-tabela{
+    background: #000444;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-align: center;    
+}
+
+.corpo-tabela{
+    text-align: center;    
+}
+
+.texto-centro{
+    padding-top: 15px;
+}
+.corpo-tabela:hover{
+    background: #ccc;
+}

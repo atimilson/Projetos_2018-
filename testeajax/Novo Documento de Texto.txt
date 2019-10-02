@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS product (
+  product_code varchar(15) NOT NULL,
+  product_name varchar(100) DEFAULT NULL,
+  product_price int DEFAULT NULL,
+  PRIMARY KEY (product_code)
+)
+INSERT INTO product (product_code, product_name, product_price) VALUES
+('19739140', 'Product 1', 30),
+('19739141', 'Product 2', 13),
+('19739142', 'Product 3', 34),
+('19739143', 'Product 4', 65),
+('19739144', 'Product 5', 32),
+('19739145', 'Product 6', 76),
+('19739146', 'Product 7', 90);

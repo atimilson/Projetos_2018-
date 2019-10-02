@@ -1,0 +1,146 @@
+	
+CREATE TABLE "ci_sessions" (
+            "id" varchar(40) NOT NULL,
+            "ip_address" varchar(45) NOT NULL,
+            "timestamp" bigint DEFAULT 0 NOT NULL,
+            "data" text DEFAULT '' NOT NULL
+    );
+
+CREATE INDEX "ci_sessions_timestamp" ON "ci_sessions" ("timestamp");
+
+
+CREATE TABLE acessos_home_sinfranet (
+    id serial primary key,
+    data_visualizacao timestamp default now() NOT NULL,
+	ip_address varchar(45) NOT NULL
+);
+
+CREATE OR REPLACE FUNCTION acessos_horarios_sinfranet()
+RETURNS trigger AS $sinfranet_trigger$
+BEGIN
+INSERT INTO acessos_home_sinfranet
+(ip_address)
+VALUES
+(new.ip_address);
+RETURN NEW;
+END;
+$sinfranet_trigger$ LANGUAGE plpgsql;
+
+CREATE TRIGGER log_trigger
+AFTER INSERT ON ci_sessions
+FOR EACH ROW
+EXECUTE PROCEDURE acessos_horarios_sinfranet();
+
+
+
+create table subcategoria (
+	id_subcategoria serial primary key not null,
+	id_categoria int not null REFERENCES categoria(id),
+	nome_sub varchar(100) not null,
+	data_cadastro timestamp default now(),
+	id_cadastrador int not null REFERENCES usuario(id)
+	
+	)
+	
+
+ALTER TABLE repositorio
+ADD COLUMN subcategoria int REFERENCES subcategoria(id_subcategoria);
+
+ALTER TABLE repositorio_alterados
+ADD COLUMN subcategoria int REFERENCES subcategoria(id_subcategoria);
+
+---------------------------------------------------------------------------------------------------------------
+
+create table videos(
+id serial primary key,
+url_video varchar(255) not null,
+url_id_video varchar(255) not null,
+titulo varchar(255) not null,
+tumb_video varchar(255) not null,
+url_preview varchar(255) not null,
+nome_usuario_publicador varchar(255) not null,
+id_usuario_publicador varchar(255) not null,
+data_cadastrado timestamp default now(),
+publicado int default 0,
+data_publicado timestamp,
+principal_home int default 0,
+segundaria_home int default 0
+
+)
+
+create table audio(
+	id serial primary key,
+	titulo varchar(255) not null,
+	nome_arquivo varchar(255) not null,
+	caminho_arquivo varchar(255) not null,
+	extensao varchar(20),
+	nome_original varchar(255),
+	data_cadastro timestamp default now(),	
+	nome_publicador varchar(255),
+	publicado int default 0,
+	data_publicado timestamp
+	)
+
+alter table audio
+add column nome_publicador_home varchar(255)
+alter table audio
+add column caminho_servidor varchar(255)
+
+create table audio_alterados(
+	id serial primary key,
+	titulo varchar(255) not null,
+	nome_arquivo varchar(255) not null,
+	caminho_arquivo varchar(255) not null,
+	extensao varchar(20),
+	nome_original varchar(255),
+	data_cadastro timestamp default now(),	
+	nome_publicador varchar(255),
+	publicado int default 0,
+	data_publicado timestamp,
+	nome_publicador_home varchar(255),
+	caminho_servidor varchar(255)
+	)
+
+create table audio_excluidos(
+	id serial primary key,
+	titulo varchar(255) not null,
+	nome_arquivo varchar(255) not null,
+	caminho_arquivo varchar(255) not null,
+	extensao varchar(20),
+	nome_original varchar(255),
+	data_cadastro timestamp default now(),	
+	nome_publicador varchar(255),
+	publicado int default 0,
+	data_publicado timestamp,
+	nome_publicador_home varchar(255),
+	caminho_servidor varchar(255)
+	)
+
+
+create table albuns(
+	id serial primary key,
+	titulo varchar(255) not null,
+	nome_arquivo varchar(255) not null,
+	caminho_arquivo varchar(255) not null,
+	data_cadastro timestamp default now(),	
+	autor_album varchar(255),
+	pasta varchar(255),
+	caminho_raiz varchar(255),
+	nome_publicador varchar(255),
+	publicado int default 0,
+	data_publicado timestamp
+	)
+
+create table foto_album(
+	id serial primary key,
+	id_album int references albuns(id),
+	nome_arquivo varchar(255) not null,
+	caminho_arquivo varchar(255) not null,
+	data_cadastro timestamp default now(),	
+	autor_foto varchar(255),
+	pasta varchar(255),
+	caminho_raiz varchar(255)
+	
+	)	
+
+

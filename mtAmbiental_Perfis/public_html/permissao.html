@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <style>
+            div.espaco_menus{
+                margin: 0 auto;
+            }
+            a{
+                color: black;
+            }    
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="margin: 0 auto; text-align: center; margin-top: 50px">
+                <div class="espaco_menus">
+                    <button type="button" class="btn btn-primary espaco_menus"><a href="index.html">Inicio</a></button>
+                </div>   
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Empresa
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus" >
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Obra
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Licenças Ambientais
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Licenças
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuarios
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+                        <a class="dropdown-item" href="#">Perfis</a>
+
+                    </div>
+                </div>
+
+                <div class="espaco_menus">
+                    <button type="button" class="btn btn-danger espaco_menus">Sair</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="container">
+            <h3 style="text-align: center">Funcionalidades</h3>
+            <h6>Perfil: administrador</h6>
+            <div class="row">
+                <div class="col-12"> <a href="" style="color: white" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="material-icons">control_point</i>  Adicionar permissão</a></div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Adicionar Funcionalidade</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form" action="" method="post" id="form_prepare"> 
+                                    
+                                    <fieldset>
+                                        <label>
+                                    Cod:
+                                    <input class="form-control" type="text" name="cod">
+                                        </label><br>
+                                        
+                                        <label>
+                                    Nome:
+                                    <input class="form-control" type="text" name="nome">
+                                        </label> <br>
+                                        
+                                        <label>
+                                    Descrição:
+                                    <input class="form-control" type="text" name="desc">
+                                        </label>
+                                    </fieldset>
+                                    <button class="btn btn-primary" onclick="adicionaLinha('grid')"/>Adicionar</button>
+                               
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+                <table id="grid" class="table table-hover">
+                    <thead>
+                    <th>cod</th>
+                    <th>Nome</th>   
+                    <th>descrição</th> 
+                    <th></th>
+                    </thead>
+                    <tbody>
+
+
+                    </tbody>
+
+
+
+
+
+                </table>
+
+
+
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+       
+        $(document).ready(function () {
+            
+            $('#modal1').modal();
+            
+            $('.your-checkbox').prop('indeterminate', true);
+
+        });
+    </script> 
+
+<script type="text/javascript">
+
+    
+    
+    
+    function adicionaLinha(idTabela) {
+        
+                var tabela = document.getElementById(idTabela);
+                var numeroLinhas = tabela.rows.length;
+                var linha = tabela.insertRow(numeroLinhas);
+                var celula1 = linha.insertCell(0);
+                var celula2 = linha.insertCell(1);   
+                var celula3 = linha.insertCell(2); 
+                var celula4 = linha.insertCell(3);
+                
+                
+                
+                
+                
+                celula1.innerHTML = $this.find("input[name='cod']").val(); 
+                celula2.innerHTML = $this.find("input[name='nome']").val(); 
+                celula3.innerHTML = $this.find("input[name='desc']").val();
+                
+                
+                alert(celula1);
+                
+                celula4.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
+                
+            }
+            
+            // funcao remove uma linha da tabela
+            function removeLinha(linha) {
+              var i=linha.parentNode.parentNode.rowIndex;
+              document.getElementById('grid').deleteRow(i);
+            }            
+    
+    
+    
+    
+    
+ /*    $('#form_prepare').submit(function(){
+		var $this = $( this );
+
+		var tr = '<tr>'+
+			'<td>'+$this.find("input[name='cod']").val()+'</td>'+
+			'<td>'+$this.find("input[name='nome']").val()+'</td>'+
+			'<td>'+$this.find("input[name='desc']").val()+'</td>'+
+			'</tr>';
+		$('#grid').find('tbody').append( tr );
+                   $('#modal1').modal('dispose');
+		return false;
+	}); */
+
+</script>
+
+
+</html>

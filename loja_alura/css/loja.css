@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/03/2017, 17:49:12
+    Author     : atimilson
+*/
+body{
+    padding: 50px;
+}
+
+.principal{
+    padding: 40px 15px;
+    text-align: center;
+}
+
+thead{
+    background: #0971B2;
+    color: white;
+    text-align: center;
+}
+
+#sair a{
+    height: 34px;
+    margin-top: 8px;
+    position: relative ;
+    float: right;
+}

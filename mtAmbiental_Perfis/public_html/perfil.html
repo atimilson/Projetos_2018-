@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <style>
+            div.espaco_menus{
+                margin: 0 auto;
+            }
+            a{
+                color: black;
+            }    
+            
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="margin: 0 auto; text-align: center; margin-top: 50px">
+                <div class="espaco_menus">
+                <button type="button" class="btn btn-primary espaco_menus">Inicio</button>
+                 </div>   
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Empresa
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus" >
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Obra
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="dropdown espaco_menus">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Licenças Ambientais
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Pesquisar</a>
+
+                    </div>
+                </div>
+
+
+               
+                    <div class="dropdown espaco_menus">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Licenças
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Cadastrar</a>
+                            <a class="dropdown-item" href="#">Pesquisar</a>
+
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="dropdown espaco_menus">
+                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Usuarios
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Cadastrar</a>
+                            <a class="dropdown-item" href="#">Pesquisar</a>
+                            <a class="dropdown-item" href="#">Perfis</a>
+
+                        </div>
+                    </div>
+                
+                <div class="espaco_menus">
+                     <button type="button" class="btn btn-danger espaco_menus">Sair</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <table class="table table-hover">
+                    <thead>
+                    <th>Cod.Perfil</th>
+                     <th>Nome</th>   
+                     <th>Ação</th> 
+                     <th>Ativo</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                    <td>001</td> 
+                    <td>Administrador</td>
+                    <td>
+                      
+                        <a  href="permissao.html" data-toggle="tooltip" data-placement="top" title="Alterar permissãoes"><i class="material-icons">edit</i></a>
+                        
+                    </td>
+                    <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="checked">
+  <label class="custom-control-label" for="customCheck1"></label>
+</div>
+                    </td>
+                       </tr> 
+                          <tr>
+                    <td>002</td> 
+                    <td>Supervisor</td>
+                    <td>
+                        
+                        <a  href="permissao.html" data-toggle="tooltip" data-placement="top" title="Alterar permissãoes"><i class="material-icons">edit</i></a>
+                        
+                    </td>
+                    <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" checked="checked">
+  <label class="custom-control-label" for="customCheck2"></label>
+</div>
+                    </td>
+                       </tr> 
+                         <tr>
+                    <td>003</td> 
+                    <td>Usuario</td>
+                    <td>
+                        
+                        <a  href="permissao.html" data-toggle="tooltip" data-placement="top" title="Alterar permissãoes"><i class="material-icons">edit</i></a>
+                        
+                    </td>
+                    <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3" checked="checked">
+  <label class="custom-control-label" for="customCheck3"></label>
+</div>
+                    </td>
+                       </tr> 
+                       
+                        <tr>
+                    <td>004</td> 
+                    <td>Visitante</td>
+                    <td>
+                        
+                        <a  href="permissao.html" data-toggle="tooltip" data-placement="top" title="Alterar permissãoes"><i class="material-icons">edit</i></a>
+                        
+                    </td>
+                    <td>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked="checked">
+  <label class="custom-control-label" for="customCheck4"></label>
+</div>
+                    </td>
+                       </tr> 
+                        
+                        
+                    </tbody>
+                    
+                    
+                    
+                    
+                    
+                </table>
+                
+                
+                
+            </div>
+            
+            
+            
+        </div>
+        
+
+
+
+
+
+
+
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.your-checkbox').prop('indeterminate', true);
+        
+    });
+    </script> 
+        
+        
+        
+        </html>

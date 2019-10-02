@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 25/10/2017, 18:00:30
+    Author     : 05506932111
+*/
+body {
+  margin: 0px; }
+
+#menu {
+  width: 100%;
+  background: #6600CC;
+  margin: 0px; }
+  #menu ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none; }
+    #menu ul li {
+      display: inline-block; }
+      #menu ul li a {
+        line-height: 0;
+        padding: 20px 15px;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none; }
+        #menu ul li a:hover, #menu ul li a:focus {
+          background: #fff;
+          color: #6600CC; }
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/10/2017, 18:32:32
+    Author     : 05506932111
+*/
+
+$cont: 1;
+
+@while $cont < 4{
+    div.item-#{$cont}{
+        background: #f23 * $cont;
+    }
+    $cont: $cont + 1;
+}

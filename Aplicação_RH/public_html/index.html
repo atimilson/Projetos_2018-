@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+
+
+
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script type="text/javascript"></script>
+
+
+        <style>
+            html,body{
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                display: grid;
+            }
+            #menu{
+
+                height: 100%;
+                background: linear-gradient(to right,#000444 0,#1d357f 100%,#1d357f 60%,#000444 100%);
+            }
+            #topo{
+                background: linear-gradient(to right,#000444 0,#1d357f -25%,#1d357f 60%,#000444 100%);
+            }
+
+            #menu #logo{
+                text-align: center;
+            }
+            .titulos_form{
+                text-align: left;
+                margin:  5px 0px;
+
+            }
+
+            ul .sumir{
+                display: none;
+            }
+
+            ul .aparecer{
+                display: block
+            }
+
+            .formulario{
+                margin-left: 60px; 
+               margin-right: 60px;
+            }
+            
+            body{
+                background: #E5E5E5;
+            }
+            
+            .espaco_top{
+                padding-top: 20px;
+            }
+            
+            .tab-content{
+                margin-right: 200px;
+                background: white;
+                
+            }
+            
+            .tab-pane{
+                margin: 0 auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container" style="width: 100%; height: 100%">
+            <div class="row" style="height: 100%">
+                <div class="col-md-2" id="menu">
+                    <div id="logo">
+                        <img src="Untitled (15).png" style="margin: 0 auto;width: 217px;">
+                    </div>
+                    <div class="panel-group" id="accordion" style="margin-top: 15px">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <span class="glyphicon glyphicon-user"></span>
+                                        Funcionario</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody><tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-th text-primary"></span> <a href="#"> 
+                                                        Cadastrar</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-th text-success"></span> <a href="#"> 
+                                                        Pesquisar</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                                        </span>Licenças</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody><tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Tex</a>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                                        </span>Ferias</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody><tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                                        Delete Account</a>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                                        </span>Configurações</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody><tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-10" style="height: 130px; " id="topo">
+
+                    <img src="layout_set_logo.png" style="float: right; margin-right: 15%">
+
+
+                </div>
+                <div class="col-md-10"  id="conteudo">
+                    <form method="" action="#">
+                        <div style="margin: 0 auto">
+
+
+                            <div style="width: 100%; margin-top: 10px;">
+
+                                <ol class="breadcrumb">
+                                    <li><a href="#">Funcionario</a></li>
+                                    <li class="active"><a href="#">Cadastrar</a></li>
+
+                                </ol>
+                                <div style="text-align: left">
+                                    <ul class="nav nav-tabs" style="margin: 0 auto">
+
+                                        <li class="active"><a data-toggle="pill" href="#menu1">Dados Pessoais</a></li> 
+                                        <li><a data-toggle="pill" href="#enderecoo">Endereço</a></li>
+                                        <li><a data-toggle="pill" href="#menu2">Dados do Servidor</a></li>
+                                        <li class="sumir" id="teste"><a data-toggle="pill" href="#estagiario">Estagiario</a></li>
+                                        <li class="sumir" id="teste2"><a data-toggle="pill" href="#contratado">Contratado</a></li>
+                                        <li class="sumir" id="teste3"><a data-toggle="pill" href="#efetivo">Efetivo</a></li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div class="tab-content">
+                                    <div id="menu1" class="tab-pane fade in active">
+                                        <!--<div style="width: 100%; background: #207cca; text-align: center" >
+                                            <h3 style="color: white;">Dados pessoais</h3>
+    
+                                        </div>
+                                        
+                                        -->
+
+
+                                        <div id=""  class="formulario espaco_top" style="">
+
+
+                                            <div class="panel panel-default" style="">
+                                                <div class="panel-heading"><h4>Informações</h4></div>
+                                                <div class="panel-body">
+
+                                                    <div class="row">
+                                                        <div class="form-group col-md-8">
+                                                            <label class="label label-danger" for="nome">Nome</label>
+                                                            <input type="text" id="nome" class="form-control">
+
+                                                        </div>
+
+                                                        <div class="form-group col-md-2">
+                                                            <label class="label label-default" for="sexo">Sexo</label>
+                                                            <select id="sexo" class="form-control">
+                                                                <option>Masculino</option>
+                                                                <option>Femenino</option>
+                                                            </select>
+
+                                                        </div>
+
+                                                        <div class="form-group col-md-2" style="" >
+                                                            <label class="label label-danger" for="nasc">Data de Nascimento</label>
+                                                            <input type="date" id="nasc" class="form-control">
+
+                                                        </div >
+
+
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="form-group col-md-2">
+                                                            <label class="label label-danger" for="cpf">CPF</label>
+                                                            <input type="number" id="cpf" class="form-control">
+
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label class="label label-default" for="ctrabalho">Carteira de trabalho</label>
+                                                            <input type="text" id="ctrabalho" class="form-control">
+
+                                                        </div>
+
+
+                                                        <div class="form-group col-md-2">
+                                                            <label class="label label-default" for="civil">Estado civil</label>
+                                                            <select  id="civil" class="form-control">
+                                                                <option>Casado</option>
+                                                                <option>Solteiro</option>
+                                                            </select>
+
+
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label class="label label-default" for="n_depe">N° Dependentes</label>
+                                                            <input type="number" id="n_depe" class="form-control">
+
+                                                        </div>
+
+
+                                                        <div class="form-group col-md-4">
+                                                            <label class="label label-default" for="ctrabalho">Nome do conjugue</label>
+                                                            <input type="text" id="ctrabalho" class="form-control">
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                    <div class="row">
+
+
+
+
+                                                        <div class="form-group col-md-6">
+                                                            <label class="label label-default" for="nome_pai">Nome do Pai</label>
+                                                            <input type="text" id="nome_pai" class="form-control">
+                                                        </div>
+
+
+
+
+
+
+
+
+                                                        <div class="form-group col-md-6">
+                                                            <label class="label label-default" for="nome_mae">Nome da Mãe</label>
+                                                            <input type="text" id="nome_mae" class="form-control">
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div style="width: 100%; background: #c0c0c0; text-align: left; padding: 1px 5px; margin-bottom: 10px;" >
+                                                     <h4 style="">Documentos de identidade</h4>
+                                        -->
+
+
+
+
+                                        <div class="formulario">
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="panel panel-default" >
+                                                        <div class="panel-heading"><h4>Documentos de identidade</h4></div>
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="form-group col-md-4">
+                                                                    <label class="label label-danger" for="rg">RG</label>
+                                                                    <input type="text" id="rg" class="form-control">
+                                                                </div>
+
+                                                                <div class="form-group col-md-2">
+                                                                    <label class="label label-default" for="or">orgão expeditor</label>
+                                                                    <input type="text" id="or" class="form-control">
+                                                                </div>
+
+                                                                <div class="form-group col-md-2">
+                                                                    <label class="label label-default" for="uf-rg">UF</label>
+                                                                    <select id="uf-rg" class="form-control">
+                                                                        <option>MT</option>
+                                                                        <option>PR</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div  class="form-group col-md-4">
+                                                                    <label class="label label-danger" for="D_exp">Data Expedição</label>
+                                                                    <input type="date" id="D_exp" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+
+                                                </div>
+
+                                                <!--  <div style="width: 100%; background: #c0c0c0; text-align: left; padding: 1px 5px; margin-bottom: 10px;" >
+                                                              <h4 style="">Naturalidade</h4>
+                                                -->
+
+
+                                                <div class="col-md-6">
+
+                                                    <div class="panel panel-default" >
+                                                        <div class="panel-heading"><h4>Naturalidade</h4></div>
+                                                        <div class="panel-body">
+                                                            <div class="row">
+
+                                                                <div class="form-group col-md-4">
+                                                                    <label class="label label-default" for="pais">Pais</label>
+                                                                    <input type="text" id="pais" class="form-control">
+                                                                </div>
+
+
+
+                                                                <div class="form-group col-md-2">
+                                                                    <label class="label label-danger"for="uf-n">UF</label>
+                                                                    <select id="uf-n" class="form-control">
+                                                                        <option>MT</option>
+                                                                        <option>PR</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group col-md-6">
+                                                                    <label class="label label-danger" for="muni">Município</label>
+                                                                    <input type="text" id="muni" class="form-control">
+                                                                </div>
+
+                                                            </div>  
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div style="text-align: center">
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <button class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Voltar</button>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <a data-toggle="pill"  class="btn btn-success" href="#enderecoo">avançar <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div style="width: 100%; background: #c0c0c0; text-align: left; padding: 1px 5px; margin-bottom: 10px;" >
+                                                <h4 style="">Informações para contato</h4>
+    
+                                    </div>
+                                    -->
+                                    <div id="enderecoo" class="tab-pane fade" style="">
+
+
+
+                                        <div class="formulario espaco_top">
+
+
+                                            <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Informações para contato</h4></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+
+
+                                                        <div class="form-group col-md-6">
+                                                            <label class="label label-danger" for="logra">Logradouro</label>
+                                                            <input type="text" id="logra" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-1">
+                                                            <label class="label label-default" for="numero">N.</label>
+                                                            <input type="text" id="numero" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-5">
+                                                            <label class="label label-danger" for="bairro">Bairro</label>
+                                                                <input type="text" id="bairro" class="form-control">
+                                                        </div>
+
+
+                                                    </div>         
+
+                                                    <div class="row">
+                                                        
+                                                            
+                                                            <div class="form-group col-md-6">
+                                                                <label class="label label-default"  for="comp">Complemento</label>
+                                                                <input type="text" id="comp" class="form-control">
+                                                            </div>
+                                                       
+                                                   
+                                                       
+
+                                                            <div class="form-group col-md-2">
+                                                                <label class="label label-default" for="quad">Quadra</label>
+                                                                <input type="text" id="quad" class="form-control">
+                                                            </div>
+                                                            
+
+                                                            <div class="form-group col-md-2">
+                                                                <label class="label label-default" for="cep">CEP</label>
+                                                                <input type="text" id="cep" class="form-control">
+                                                            </div>
+                                                        <div class="form-group col-md-2">
+                                                                <label class="label label-danger" for="muni">Municipio</label>
+                                                                <input type="text" id="muni" class="form-control">
+                                                            </div>
+
+
+                                                              
+                                                    </div>
+                                                    <div class="row">
+                                                       
+                                                            <div class="form-group col-md-2">
+                                                                <label class="label label-default"  for="tel">Telefone Fixo</label>
+                                                                <input type="tel" id="tel" class="form-control">
+                                                            </div>
+                                                         <div class="form-group col-md-2">
+                                                             <label class="label label-default" for="tel">Telefone celular</label>
+                                                                <input type="tel" id="tel" class="form-control">
+                                                            </div>
+                                                        
+                                                        <div class="form-group col-md-8">
+                                                            <label class="label label-default" for="email_p">Email pessoal</label>
+                                                                <input type="email" id="email_p" class="form-control">
+                                                            </div>
+                                                        
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div style="text-align: center">
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <button class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Voltar</button>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <a data-toggle="pill"  class="btn btn-success" href="#menu2">avançar <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div id="menu2" class="tab-pane fade">
+                                        <div class="formulario espaco_top" style="">
+
+                                            
+                                            <form method="" action="#">
+                                                <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Informações do Servidor</h4></div>
+                                                <div class="panel-body">
+                                                
+                                                <div class="row">
+                                                    <div class="form-group col-md-8">
+                                                        <label for="cargo" class="label label-default">Cargo</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-danger">Situação</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2" style="" >
+
+
+                                                    </div >
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="vinc" class="label label-danger">Vinculo</label>
+                                                        <select id="vinc" class="form-control" onchange="selecionado()">
+                                                            <option selected="selected">Selecione opção</option>
+                                                            <option>Estagiario(a)</option>
+                                                            <option>Contratado(a)</option>
+                                                            <option>Efetivo(a)</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-default">num.crachá</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2" style="" >
+                                                        <label for="situ" class="label label-default">Carteira de trabalho</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div >
+
+
+
+                                                </div>
+                                                </div>
+                                                </div>
+
+
+                                                <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Setor</h4></div>
+                                                <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="cargo" class="label label-default">Nivel Organizacional</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-danger">Sigra</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-4" style="" >
+                                                        <label for="situ" class="label label-danger">Nome do Setor</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div >
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="cargo" class="label label-danger">Carreira</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="sexo" class="label label-default">Termo de responsabilidade</label>
+                                                        <select id="sexo" class="form-control">
+                                                            <option>sim</option>
+                                                            <option>não</option>
+                                                        </select>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+
+
+
+                                                </div>
+                                                </div>
+
+                                            
+
+
+
+                                             <div class="row">
+                                                <div style="text-align: center">
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <button class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Voltar</button>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <a data-toggle="pill"  class="btn btn-success" href="#menu2">avançar <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        </form>
+                                    </div>
+                                    <div id="estagiario" class="tab-pane fade">
+                                        <div class="formulario espaco_top" style="">
+                                            <form method="" action="#">
+                                                <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Informações do Estagiario</h4></div>
+                                                <div class="panel-body">
+                                                      <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="cargo" class="label label-default">Nivel Organizacional</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-danger">Sigra</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-4" style="" >
+                                                        <label for="situ" class="label label-danger">Nome do Setor</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div >
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="cargo" class="label label-danger">Carreira</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="sexo" class="label label-default">Termo de responsabilidade</label>
+                                                        <select id="sexo" class="form-control">
+                                                            <option>sim</option>
+                                                            <option>não</option>
+                                                        </select>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+
+                                       
+                                    </div>
+                                    </div>
+
+
+                                    <div id="contratado" class="tab-pane fade">
+
+
+                                          <div class="formulario espaco_top" style="">
+                                            <form method="" action="#">
+                                                <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Informações do Contratado</h4></div>
+                                                <div class="panel-body">
+                                                      <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="cargo" class="label label-default">Nivel Organizacional</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-danger">Sigra</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-4" style="" >
+                                                        <label for="situ" class="label label-danger">Nome do Setor</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div >
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="cargo" class="label label-danger">Carreira</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="sexo" class="label label-default">Termo de responsabilidade</label>
+                                                        <select id="sexo" class="form-control">
+                                                            <option>sim</option>
+                                                            <option>não</option>
+                                                        </select>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+
+                                       
+                                    </div>
+                                    </div>
+
+                                    <div id="efetivo" class="tab-pane fade">
+
+
+                                            <div class="formulario espaco_top" style="">
+                                            <form method="" action="#">
+                                                <div class="panel panel-default" >
+                                                <div class="panel-heading"><h4>Informações do Efetivo</h4></div>
+                                                <div class="panel-body">
+                                                      <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="cargo" class="label label-default">Nivel Organizacional</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="situ" class="label label-danger">Sigra</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-4" style="" >
+                                                        <label for="situ" class="label label-danger">Nome do Setor</label>
+                                                        <input type="text" id="situ" class="form-control">
+
+                                                    </div >
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="cargo" class="label label-danger">Carreira</label>
+                                                        <input type="text" id="cargo" class="form-control">
+
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="sexo" class="label label-default">Termo de responsabilidade</label>
+                                                        <select id="sexo" class="form-control">
+                                                            <option>sim</option>
+                                                            <option>não</option>
+                                                        </select>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+
+                                       
+                                    </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+
+
+            <script>
+
+                function selecionado() {
+                    var e = document.getElementById("vinc");
+                    var itemSelecionado = e.options[e.selectedIndex].text;
+                    var meubotao = document.getElementById("teste").classList;
+                    var meubotao2 = document.getElementById("teste2").classList;
+                    var meubotao3 = document.getElementById("teste3").classList;
+
+                    if (itemSelecionado === "Estagiario(a)") {
+                        meubotao2.remove("aparecer");
+                        meubotao2.add("sumir");
+
+                        meubotao3.remove("aparecer");
+                        meubotao3.add("sumir");
+
+                        if (meubotao.contains("sumir")) {
+                            meubotao.remove("sumir");
+                        } else {
+                            meubotao.add("sumir");
+                        }
+                        if (meubotao.contains("aparecer")) {
+
+                            meubotao.add("aparecer");
+                        } else {
+                            meubotao.remove("aparecer");
+                        }
+                    }
+
+                    if (itemSelecionado === "Contratado(a)") {
+
+                        meubotao.remove("aparecer");
+                        meubotao.add("sumir");
+
+                        meubotao3.remove("aparecer");
+                        meubotao3.add("sumir");
+
+                        if (meubotao2.contains("sumir")) {
+                            meubotao2.remove("sumir");
+                        } else {
+
+                            meubotao2.add("sumir");
+
+                        }
+                        if (meubotao2.contains("aparecer")) {
+                            meubotao2.add("aparecer");
+                        } else {
+                            meubotao2.remove("aparecer");
+                        }
+                    }
+
+                    if (itemSelecionado === "Efetivo(a)") {
+
+
+                        meubotao2.remove("aparecer");
+                        meubotao2.add("sumir");
+
+                        meubotao.remove("aparecer");
+                        meubotao.add("sumir");
+
+                        if (meubotao3.contains("sumir")) {
+                            meubotao3.remove("sumir");
+                        } else {
+
+                            meubotao3.add("sumir");
+
+                        }
+                        if (meubotao3.contains("aparecer")) {
+                            meubotao3.add("aparecer");
+                        } else {
+                            meubotao3.remove("aparecer");
+                        }
+                    }
+
+                }
+
+            </script>
+
+    </body>
+</html>

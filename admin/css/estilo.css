@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/06/2018, 09:40:28
+    Author     : 05506932111
+*/
+@font-face{
+    font-family: Nexa-xbold;
+    src: url('../fonts/Nexa-XBold.otf');
+}
+
+*,html{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body{
+    background-image: url('../imagens/back_site-mapa.jpg');
+    background-repeat: repeat;
+    background-size: inherit;
+}
+
+
+#formulario_login{
+    height: 300px;
+    width: 600px;
+    background: rgba(233,226,210,.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+}
+
+#img_central{
+    margin: auto;
+}
+#container_principal{
+    margin-top: 30px;
+}
+#div_imgem_mapa{
+    text-align: center;
+}
+.inputs{
+
+        display: flex;
+        padding-top: 40px;
+}
+
+#back_icone_user{
+  background-color: #7B7C7D;  
+}
+
+#back_icone_user i{
+    color: white;
+}
+
+#back_icone_pass{
+    background-color: #7B7C7D;
+    
+}
+
+#back_icone_pass i{
+    color: white;
+}
+
+#btn_entrar{
+   display: inline-flex; 
+}
+
+#conteudo{
+    min-height: 900px;
+    height: auto;
+    background: rgba(233,226,210,.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 33px;
+    padding-top: 24px;
+    max-width: 1241px;
+    width: auto;
+        
+}
+
+label {
+    font-family: Nexa-xbold;
+    color: #133058;
+    font-size: 1em;
+    line-height: 0.428571;
+}
+
+#col-pesquisar{
+    padding-top: 23px;
+}
+
+.cp{
+        padding: 12px 3px;
+}
+
+table th{
+    vertical-align: inherit;
+    font-family: Nexa-xbold;
+    color: #133058;
+}
+#tabela{
+    margin-top: 27px;
+}
+th{
+
+}
+
+#col-exportar{
+      padding-top: 23px;  
+}

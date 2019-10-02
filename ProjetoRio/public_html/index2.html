@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.css">
+        <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+
+        <style>
+            html{
+                margin: 0 auto;
+            }  
+
+            header #menu-mobile{
+                position: fixed;
+                top: 40px;
+                background-color: #fff;
+                width: 100%;
+                left: 0;
+                height: 100%;
+                transition: 1s;
+                z-index: 5;
+            }
+
+
+            header.open-menu #menu-mobile ul {
+                margin: 0 -40px;
+
+            }
+
+            header.open-menu #menu-mobile li{
+                text-align: center;
+                border-top: #CCC 1px solid; 
+
+            }
+
+            header.open-menu #menu-mobile li:last-child {
+
+                border-bottom: #CCC 1px solid; 
+            }
+
+            header.open-menu #menu-mobile li a {
+                color: #633392;
+                font-family: 'OpenSans';
+                font-weight: bold;
+                font-size: 16px;
+                padding: 18px;
+                display: block;
+            }
+
+            header.open-menu .bar-close{
+                position: absolute;
+                bottom: 40px;
+                background-color: #633492;
+                height: 40px;
+                width: 100%;
+            }
+
+            header.open-menu .bar-close .btn-close {
+                background:none;
+                border:none;
+                color: #FFF;
+                font-size: 22px;
+
+
+            }
+            li{
+                list-style: none;
+
+            }
+            nav{
+
+
+            }
+            ul{
+                width:230px;
+                background: #CCC;
+            }
+
+            ul.sub{
+                display: none;
+            }
+            sub-menu{
+                display: block;
+            }
+
+            .teste-lista{
+                margin: 0 auto;
+                position: relative;
+
+                overflow: hidden;
+                transition:  height .35s ease;
+                display: block;
+            }
+
+            #blind{
+                
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header class="open-menu">
+
+            <div id="menu-mobile">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li id="teste"><a>Videos</a>
+                            <ul>
+                                <li class="teste-lista" id="teste2" style="height: 0" ><a href="#">teste</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Ticktes</a></li>
+                        <li><a href="#">News</a></li>
+
+
+                    </ul>
+                </nav>
+
+
+
+            </div>
+        </header>
+
+
+
+
+
+        <script type="text/javascript" src="lib/jquery/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                /*$('#teste:eq(0)').click(function () {
+                 $('#teste2').toggle();
+                 });
+                 
+                 $('#teste:eq(1)').click(function () {
+                 $('#teste2').toggle();
+                 });
+                 
+                 $('#teste').click(function(){
+                 
+                 $('#teste2').toggleClass('teste-lista');
+                 
+                 
+                 
+                 
+                 });
+                 
+                 
+                 
+                 $("#teste").click(function () {
+                 $("#teste2").toggleClass()(
+                 function () {
+                 $("#teste2").addClass("teste-lista");
+                 $("#teste2").animate({height: "80px"});
+                 }, function () {
+                 
+                 $("#teste2").removeClass("teste-lista");
+                 $("#teste2").animate({height: "0px"});
+                 });
+                 
+                 
+                 
+                 });
+                 */
+
+                var state = true;
+                $("#teste").on("click", function () {
+                    if (state) {
+                        $("#teste2").animate({
+                           height: 70
+                           
+                        }, 100);
+                    } else {
+                        $("#teste2").animate({
+                            height: 0
+                        }, 100);
+                    }
+                    state = !state;
+                });
+                
+               
+               
+               
+             
+               
+               
+               
+            });
+
+        </script>
+    </body>
+</html>
